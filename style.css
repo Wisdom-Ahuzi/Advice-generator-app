@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300&family=Overpass&family=Raleway:ital,wght@0,600;1,100&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.main {
+    width: 33%;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    position: relative;
+}
+
+.main>.inner {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+}
+
+.main>.inner>.header {
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: hsl(150, 100%, 66%);
+}
+
+.main>.inner>.advice {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main>.inner>.advice>p {
+    width: 75%;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+    line-height: 130%;
+    word-spacing: 2px;
+}
+
+.main>.inner>.line>img {
+    position: relative;
+    top: 30px;
+    width: 390px;
+}
+
+.main>.changer>.img {
+    position: relative;
+    width: 60px;
+    top: 93%;
+    padding: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+}
+
+.shadow {
+    box-shadow: 2px 2px 2rem hsl(150, 100%, 66%) !important;
+}
+
+.attribution {
+    width: 100%;
+    background-color: hsl(218, 23%, 16%);
+    text-align: center;
+}
+
+.attribution>a {
+    color: hsl(193, 38%, 86%);
+}
+
+@media screen and (min-width:1112px) and (max-width:1600px) {
+    .main {
+        width: 38%;
+    }
+
+    .main>.inner>.advice>p {
+        width: 76%;
+        word-spacing: 2px;
+    }
+}
+
+@media screen and (min-width:671px) and (max-width:1111px) {
+    .main {
+        width: 55%;
+    }
+
+    .main>.inner>.advice>p {
+        width: 76%;
+        word-spacing: 2px;
+        font-size: 23px;
+    }
+
+    .main>.inner>.line>img {
+        position: relative;
+        top: 30px;
+        width: 335px;
+    }
+
+    .attribution>a,
+    .attribution {
+        color: hsl(193, 38%, 86%);
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:670px) {
+    .main {
+        width: 90%;
+    }
+
+    .main>.inner>.header {
+        font-size: 11px;
+    }
+
+    .main>.inner>.advice>p {
+        width: 80%;
+        word-spacing: 2px;
+        font-size: 23px;
+    }
+
+    .main>.inner>.line>img {
+        position: relative;
+        top: 35px;
+        width: 300px;
+    }
+
+    .main>.inner>.changer>img {
+        left: 42%;
+    }
+
+    .attribution>a,
+    .attribution {
+        color: hsl(193, 38%, 86%);
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:200px) and (max-width:376px) {
+
+    .main>.inner>.line>img {
+        position: relative;
+        top: 35px;
+        width: 250px;
+    }
+}

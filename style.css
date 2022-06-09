@@ -51,6 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    top: -25px;
 }
 
 .main>.inner>.advice>p {
